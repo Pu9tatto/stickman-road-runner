@@ -1,0 +1,12 @@
+# Level 4 - Double Turns
+# Обучение: последовательные повороты
+
+START
+STRAIGHT
+CURVE_R
+CURVE_R
+STRAIGHT
+CURVE_L
+CURVE_L
+STRAIGHT
+FINISH

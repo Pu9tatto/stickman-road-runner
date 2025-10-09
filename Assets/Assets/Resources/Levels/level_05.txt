@@ -1,0 +1,13 @@
+# Level 5 - Square
+# Обучение: завершение фигуры
+
+START
+STRAIGHT
+CURVE_R
+STRAIGHT
+CURVE_R
+STRAIGHT
+CURVE_R
+STRAIGHT
+CURVE_R
+FINISH

@@ -1,0 +1,11 @@
+# Level 6 - Outward Spiral
+# Средняя: постепенное раскручивание
+
+START
+STRAIGHT
+CURVE_R
+CURVE_R
+CURVE_R
+CURVE_R
+STRAIGHT
+FINISH

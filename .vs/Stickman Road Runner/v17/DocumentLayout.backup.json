@@ -1,0 +1,137 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "V:\\IT\\Unity\\Stickman Road Runner\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3EB1B291-A1E3-1A49-87F6-DC1F9DA681BB}|Assembly-CSharp.csproj|V:\\IT\\Unity\\Stickman Road Runner\\assets\\assets\\scripts\\playerinputcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EB1B291-A1E3-1A49-87F6-DC1F9DA681BB}|Assembly-CSharp.csproj|solutionrelative:assets\\assets\\scripts\\playerinputcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EB1B291-A1E3-1A49-87F6-DC1F9DA681BB}|Assembly-CSharp.csproj|V:\\IT\\Unity\\Stickman Road Runner\\assets\\assets\\scripts\\movement\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EB1B291-A1E3-1A49-87F6-DC1F9DA681BB}|Assembly-CSharp.csproj|solutionrelative:assets\\assets\\scripts\\movement\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EB1B291-A1E3-1A49-87F6-DC1F9DA681BB}|Assembly-CSharp.csproj|v:\\it\\unity\\stickman road runner\\assets\\assets\\scripts\\road\\actions\\roadtrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EB1B291-A1E3-1A49-87F6-DC1F9DA681BB}|Assembly-CSharp.csproj|solutionrelative:assets\\assets\\scripts\\road\\actions\\roadtrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EB1B291-A1E3-1A49-87F6-DC1F9DA681BB}|Assembly-CSharp.csproj|v:\\it\\unity\\stickman road runner\\assets\\assets\\scripts\\movement\\imovable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EB1B291-A1E3-1A49-87F6-DC1F9DA681BB}|Assembly-CSharp.csproj|solutionrelative:assets\\assets\\scripts\\movement\\imovable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EB1B291-A1E3-1A49-87F6-DC1F9DA681BB}|Assembly-CSharp.csproj|v:\\it\\unity\\stickman road runner\\assets\\assets\\scripts\\road\\actions\\finishtrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EB1B291-A1E3-1A49-87F6-DC1F9DA681BB}|Assembly-CSharp.csproj|solutionrelative:assets\\assets\\scripts\\road\\actions\\finishtrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EB1B291-A1E3-1A49-87F6-DC1F9DA681BB}|Assembly-CSharp.csproj|V:\\IT\\Unity\\Stickman Road Runner\\assets\\assets\\scripts\\managers\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EB1B291-A1E3-1A49-87F6-DC1F9DA681BB}|Assembly-CSharp.csproj|solutionrelative:assets\\assets\\scripts\\managers\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EB1B291-A1E3-1A49-87F6-DC1F9DA681BB}|Assembly-CSharp.csproj|V:\\IT\\Unity\\Stickman Road Runner\\assets\\assets\\scripts\\road\\levelbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EB1B291-A1E3-1A49-87F6-DC1F9DA681BB}|Assembly-CSharp.csproj|solutionrelative:assets\\assets\\scripts\\road\\levelbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RoadTrigger.cs",
+              "DocumentMoniker": "V:\\IT\\Unity\\Stickman Road Runner\\Assets\\Assets\\Scripts\\Road\\Actions\\RoadTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Assets\\Scripts\\Road\\Actions\\RoadTrigger.cs",
+              "ToolTip": "V:\\IT\\Unity\\Stickman Road Runner\\Assets\\Assets\\Scripts\\Road\\Actions\\RoadTrigger.cs",
+              "RelativeToolTip": "Assets\\Assets\\Scripts\\Road\\Actions\\RoadTrigger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T17:52:53.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FinishTrigger.cs",
+              "DocumentMoniker": "V:\\IT\\Unity\\Stickman Road Runner\\Assets\\Assets\\Scripts\\Road\\Actions\\FinishTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Assets\\Scripts\\Road\\Actions\\FinishTrigger.cs",
+              "ToolTip": "V:\\IT\\Unity\\Stickman Road Runner\\Assets\\Assets\\Scripts\\Road\\Actions\\FinishTrigger.cs",
+              "RelativeToolTip": "Assets\\Assets\\Scripts\\Road\\Actions\\FinishTrigger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T17:52:49.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IMovable.cs",
+              "DocumentMoniker": "V:\\IT\\Unity\\Stickman Road Runner\\Assets\\Assets\\Scripts\\Movement\\IMovable.cs",
+              "RelativeDocumentMoniker": "Assets\\Assets\\Scripts\\Movement\\IMovable.cs",
+              "ToolTip": "V:\\IT\\Unity\\Stickman Road Runner\\Assets\\Assets\\Scripts\\Movement\\IMovable.cs",
+              "RelativeToolTip": "Assets\\Assets\\Scripts\\Movement\\IMovable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T17:48:23.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerInputController.cs",
+              "DocumentMoniker": "V:\\IT\\Unity\\Stickman Road Runner\\Assets\\Assets\\Scripts\\PlayerInputController.cs",
+              "RelativeDocumentMoniker": "Assets\\Assets\\Scripts\\PlayerInputController.cs",
+              "ToolTip": "V:\\IT\\Unity\\Stickman Road Runner\\Assets\\Assets\\Scripts\\PlayerInputController.cs",
+              "RelativeToolTip": "Assets\\Assets\\Scripts\\PlayerInputController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T16:32:00.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "V:\\IT\\Unity\\Stickman Road Runner\\Assets\\Assets\\Scripts\\Movement\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Assets\\Scripts\\Movement\\PlayerMovement.cs",
+              "ToolTip": "V:\\IT\\Unity\\Stickman Road Runner\\Assets\\Assets\\Scripts\\Movement\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Assets\\Scripts\\Movement\\PlayerMovement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T16:27:29.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LevelManager.cs",
+              "DocumentMoniker": "V:\\IT\\Unity\\Stickman Road Runner\\Assets\\Assets\\Scripts\\Managers\\LevelManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Assets\\Scripts\\Managers\\LevelManager.cs",
+              "ToolTip": "V:\\IT\\Unity\\Stickman Road Runner\\Assets\\Assets\\Scripts\\Managers\\LevelManager.cs",
+              "RelativeToolTip": "Assets\\Assets\\Scripts\\Managers\\LevelManager.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T18:07:36.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LevelBuilder.cs",
+              "DocumentMoniker": "V:\\IT\\Unity\\Stickman Road Runner\\Assets\\Assets\\Scripts\\Road\\LevelBuilder.cs",
+              "RelativeDocumentMoniker": "Assets\\Assets\\Scripts\\Road\\LevelBuilder.cs",
+              "ToolTip": "V:\\IT\\Unity\\Stickman Road Runner\\Assets\\Assets\\Scripts\\Road\\LevelBuilder.cs",
+              "RelativeToolTip": "Assets\\Assets\\Scripts\\Road\\LevelBuilder.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAASwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T13:30:49.688Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+# Level 7 - ZigZag
+# Средняя: быстрая смена направлений
+
+START
+STRAIGHT
+CURVE_R
+STRAIGHT
+CURVE_L
+STRAIGHT
+CURVE_R
+STRAIGHT
+CURVE_L
+STRAIGHT
+CURVE_R
+STRAIGHT
+FINISH

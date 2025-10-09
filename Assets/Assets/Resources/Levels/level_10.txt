@@ -1,0 +1,12 @@
+# Level 10 - Basic Eight
+# Средняя: первая сложная фигура
+
+START
+STRAIGHT
+CURVE_R
+CURVE_R
+STRAIGHT
+CURVE_L
+CURVE_L
+STRAIGHT
+FINISH

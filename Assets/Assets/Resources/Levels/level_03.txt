@@ -1,0 +1,12 @@
+# Level 3 - Simple Snake
+# Обучение: чередование поворотов
+
+START
+STRAIGHT
+CURVE_R
+STRAIGHT
+CURVE_L
+STRAIGHT
+CURVE_R
+STRAIGHT
+FINISH

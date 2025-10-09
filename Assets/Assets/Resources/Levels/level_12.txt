@@ -1,0 +1,14 @@
+# Level 12 - Inward Spiral
+# Сложная: обратное закручивание
+
+START
+CURVE_R
+CURVE_R
+CURVE_R
+CURVE_R
+CURVE_R
+CURVE_R
+CURVE_R
+CURVE_R
+STRAIGHT
+FINISH

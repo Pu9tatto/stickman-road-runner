@@ -1,0 +1,10 @@
+# Level 2 - First Turns  
+# Обучение: базовые повороты
+
+START
+STRAIGHT
+CURVE_R
+STRAIGHT
+CURVE_L
+STRAIGHT
+FINISH

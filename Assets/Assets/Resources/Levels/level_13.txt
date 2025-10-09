@@ -1,0 +1,21 @@
+# Level 13 - Advanced Snake
+# Сложная: быстрая смена с двойными поворотами
+
+START
+STRAIGHT
+CURVE_R
+CURVE_R
+STRAIGHT
+CURVE_L
+CURVE_L
+STRAIGHT
+CURVE_R
+CURVE_R
+STRAIGHT
+CURVE_L
+CURVE_L
+STRAIGHT
+CURVE_R
+CURVE_R
+STRAIGHT
+FINISH

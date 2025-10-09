@@ -1,0 +1,17 @@
+# Level 8 - Rectangle
+# Средняя: длинные прямые + резкие повороты
+
+START
+STRAIGHT
+STRAIGHT
+CURVE_R
+STRAIGHT
+STRAIGHT
+CURVE_R
+STRAIGHT
+STRAIGHT
+CURVE_R
+STRAIGHT
+STRAIGHT
+CURVE_R
+FINISH

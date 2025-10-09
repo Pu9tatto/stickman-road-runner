@@ -1,0 +1,18 @@
+# Level 11 - Simple Maze
+# Сложная: много последовательных поворотов
+
+START
+STRAIGHT
+CURVE_R
+CURVE_R
+CURVE_R
+CURVE_R
+CURVE_R
+STRAIGHT
+CURVE_L
+CURVE_L
+CURVE_L
+CURVE_L
+CURVE_L
+STRAIGHT
+FINISH
