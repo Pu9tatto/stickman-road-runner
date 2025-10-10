@@ -1,16 +1,32 @@
-
 using UnityEngine;
 
 public class PillarChanger : RoadTrigger
 {
     [SerializeField] private Transform _pillar;
+    [SerializeField] private PillarChanger _otherPillar;
 
-    protected override void TriggerAction(GameObject player)
+    private bool _isExitPillar = false;
+
+    protected override void OnTriggerEnter(Collider other)
     {
-        IMovable movable = player.GetComponent<IMovable>();
-        if (movable != null)
+        if(other.TryGetComponent<RotationMovement>(out RotationMovement _rotator))
         {
-            movable.ChangePillar(_pillar);
+            if (_isExitPillar)
+            {
+                _rotator.TryClearPillar(_pillar);
+                _isExitPillar = false;
+            }
+            else
+            {
+                _rotator.SetPillar(_pillar);
+                _otherPillar.SetExit(true);
+            }
         }
+    }
+
+    public void SetExit (bool isExit) => _isExitPillar = isExit;
+
+    protected override void TriggerAction(PlayerMovement playerMovement)
+    {
     }
 }

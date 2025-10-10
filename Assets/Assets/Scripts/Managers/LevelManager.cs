@@ -49,11 +49,6 @@ public class LevelManager : MonoBehaviour
         LoadNextLevel();
     }
 
-    private void Update()
-    {
-        Debug.Log(Time.timeScale);
-    }
-
     public void LoadNextLevel()
     {
         if (_isLevelTransitioning) return;

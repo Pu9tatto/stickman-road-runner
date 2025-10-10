@@ -5,14 +5,12 @@ public class RespawnTrigger : RoadTrigger
 {
     [SerializeField] private float _respawnDelay = 1f;
 
-    protected override void TriggerAction(GameObject player)
-    {
-        if(player.TryGetComponent<IMovable>(out IMovable movable))
-        {
-            movable.StopMove();
-        }
 
-        if(player.TryGetComponent<RespawnComponent>(out RespawnComponent respawner))
+    protected override void TriggerAction(PlayerMovement movable)
+    {
+        movable.StopMove();
+
+        if (movable.gameObject.TryGetComponent<RespawnComponent>(out RespawnComponent respawner))
         {
             StartCoroutine(Respawn(respawner));
         }

@@ -2,30 +2,29 @@ using UnityEngine;
 
 public class PlayerInputController : MonoBehaviour
 {
-    private PlayerMovement _playerMovement;
+    private IMovable _movable;
 
     private void Awake()
     {
-        _playerMovement = GetComponent<PlayerMovement>();
+        _movable = GetComponent<IMovable>();
     }
 
     private void Update()
     {
         HandleInput();
+        _movable?.Move();
     }
 
     private void HandleInput()
     {
-        // Нажатие - начинаем вращение если есть столб
         if (Input.GetMouseButtonDown(0))
         {
-            _playerMovement.SetInputPressed(true);
+            _movable?.SetInputPressed(true);
         }
 
-        // Отпускание - прекращаем вращение
         if (Input.GetMouseButtonUp(0))
         {
-            _playerMovement.SetInputPressed(false);
+            _movable?.SetInputPressed(false);
         }
     }
 }

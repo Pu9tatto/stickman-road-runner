@@ -1,16 +1,15 @@
-using System;
+// IMovable.cs
 using UnityEngine;
 
 public interface IMovable
 {
     void Move();
-    void StartMove();
-    void StopMove();
-    void ChangePillar(Transform pillar);
+    void SetInputPressed(bool pressed);
     void StopRotation();
+    void StopMove();
+
     Vector3 CurrentDirection { get; }
     bool IsRotating { get; }
-
-    Action<bool> OnRotationStateChanged { get; set; }
-    Action<Vector3> OnDirectionChanged { get; set; }
+    bool IsMoving { get; }
+    bool IsFalling { get; }
 }
