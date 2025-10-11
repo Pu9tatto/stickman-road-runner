@@ -9,7 +9,7 @@ public class PillarChanger : RoadTrigger
 
     protected override void OnTriggerEnter(Collider other)
     {
-        if(other.TryGetComponent<RotationMovement>(out RotationMovement _rotator))
+        if(other.TryGetComponent<PlayerRotationMovement>(out PlayerRotationMovement _rotator))
         {
             if (_isExitPillar)
             {
@@ -26,7 +26,7 @@ public class PillarChanger : RoadTrigger
 
     public void SetExit (bool isExit) => _isExitPillar = isExit;
 
-    protected override void TriggerAction(PlayerMovement playerMovement)
+    protected override void TriggerAction(BaseMovement baseMovament)
     {
     }
 }

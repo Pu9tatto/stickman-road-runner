@@ -11,10 +11,10 @@ public abstract class RoadTrigger : MonoBehaviour
 
     protected virtual void OnTriggerEnter(Collider other)
     {
-        PlayerMovement playerMovement = other.GetComponent<PlayerMovement>();
-        if (playerMovement != null)
+        BaseMovement movament = other.GetComponent<BaseMovement>();
+        if (movament != null)
         {
-            TriggerAction(playerMovement);
+            TriggerAction(movament);
             OnTriggerActivated?.Invoke();
 
             if (_showDebug)
@@ -31,5 +31,5 @@ public abstract class RoadTrigger : MonoBehaviour
                collider.GetComponent<PlayerInputController>() != null;
     }
 
-    protected abstract void TriggerAction(PlayerMovement playerMovement);
+    protected abstract void TriggerAction(BaseMovement baseMovament);
 }

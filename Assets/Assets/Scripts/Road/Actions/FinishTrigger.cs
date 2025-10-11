@@ -1,31 +1,26 @@
 using System.Collections;
 using UnityEngine;
 
-public class FinishTrigger : RoadTrigger
+public class FinishTrigger : MonoBehaviour
 {
     [Header("Finish Settings")]
     [SerializeField] private ParticleSystem _confettiEffect;
     [SerializeField] private AudioClip _winSound;
     [SerializeField] private float _completionDelay = 1f;
 
-    private bool _isActivated = false;
-
-    protected override void TriggerAction(PlayerMovement playerMovement)
+    private void OnTriggerEnter(Collider other)
     {
-        if (_isActivated) return;
-        _isActivated = true;
+        if(other.TryGetComponent<BaseMovement>(out BaseMovement movement))
+        {
+            movement.StopMove();
 
-        // Останавливаем игрока
-        playerMovement.StopMove();
-
-        // Запускаем последовательность завершения уровня
-        StartCoroutine(CompleteLevelSequence(playerMovement));
+            // Запускаем последовательность завершения уровня
+            StartCoroutine(CompleteLevelSequence(movement));
+        }
     }
 
-    private IEnumerator CompleteLevelSequence(PlayerMovement playerMovement)
+    private IEnumerator CompleteLevelSequence(BaseMovement baseMovament)
     {
-        // Анимация победы
-        PlayWinAnimation(playerMovement);
 
         // Эффекты
         PlayWinEffects();
@@ -35,14 +30,6 @@ public class FinishTrigger : RoadTrigger
 
         // Завершаем уровень
         LevelManager.Instance?.CompleteCurrentLevel();
-
-        Debug.Log("Level completed! Player reached finish line.");
-    }
-
-    private void PlayWinAnimation(PlayerMovement playerMovement)
-    {
-        StickmanAnimatorController animator = playerMovement.GetComponent<StickmanAnimatorController>();
-        animator?.PlayWinAnimation();
     }
 
     private void PlayWinEffects()
@@ -59,22 +46,8 @@ public class FinishTrigger : RoadTrigger
         }
     }
 
-    protected override bool IsValidTarget(Collider collider)
-    {
-        // Финиш активируется только игроком (не ботами)
-        return collider.GetComponent<PlayerMovement>() != null &&
-               collider.GetComponent<PlayerInputController>() != null;
-    }
-
-    private void OnEnable()
-    {
-        _isActivated = false;
-    }
-
     private void OnDrawGizmos()
     {
-        if (!_showDebug) return;
-
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireCube(transform.position, GetComponent<Collider>().bounds.size);
 

@@ -8,7 +8,7 @@ public class FallMovement : MonoBehaviour
     [SerializeField] private float _fallRotationSpeed = 90f;
     [SerializeField] private float _respownHeight = -10f;
      
-    private RotationMovement _rotator;
+    private PlayerRotationMovement _rotator;
     private GroundChecker _groundChecker;
     private bool _isFalling = false;
     private Vector3 _fallDirection;

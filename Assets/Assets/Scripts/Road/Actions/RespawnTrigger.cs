@@ -6,7 +6,7 @@ public class RespawnTrigger : RoadTrigger
     [SerializeField] private float _respawnDelay = 1f;
 
 
-    protected override void TriggerAction(PlayerMovement movable)
+    protected override void TriggerAction(BaseMovement movable)
     {
         movable.StopMove();
 
