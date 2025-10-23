@@ -14,10 +14,15 @@ public class GroundChecker : MonoBehaviour
     private float _lastCheckTime;
     private bool _isGrounded = true;
     private Vector3 _fallDirection;
+    private Transform _lastHitObject;
+    private RoadSegment _groundedRoad;
 
     public bool IsGrounded => _isGrounded;
     public Vector3 FallDirection => _fallDirection;
+    public RoadSegment Road => _groundedRoad;
+
     public Action<Vector3> OnFallStarted; // Теперь передаем направление
+    public Action<Transform> OnRoadSegmentChanged;
 
     private void Update()
     {
@@ -32,13 +37,32 @@ public class GroundChecker : MonoBehaviour
     {
         Vector3 rayStart = transform.position + Vector3.up * 0.1f;
         bool wasGrounded = _isGrounded;
+        RaycastHit hit;
 
-        _isGrounded = Physics.Raycast(rayStart, Vector3.down, _groundCheckDistance, _roadLayerMask);
+        _isGrounded = Physics.Raycast(rayStart, Vector3.down, out hit, _groundCheckDistance, _roadLayerMask);
 
         if (wasGrounded && !_isGrounded)
         {
             CalculateFallDirection();
             OnFallStarted?.Invoke(_fallDirection);
+        }
+
+        if (_isGrounded && hit.collider != null)
+        {
+            if (_lastHitObject != hit.collider.transform)
+            {
+                _lastHitObject = hit.collider.transform;
+
+                _groundedRoad = hit.collider.transform.parent.GetComponent<RoadSegment>();
+
+                Transform pillarTransform = _groundedRoad.TryGetPillar();
+
+                    OnRoadSegmentChanged?.Invoke(pillarTransform);
+            }
+        }
+        else if (!_isGrounded)
+        {
+            _lastHitObject = null;
         }
     }
 

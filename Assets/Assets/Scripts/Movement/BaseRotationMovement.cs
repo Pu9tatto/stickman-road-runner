@@ -4,6 +4,7 @@ public abstract class BaseRotationMovement : MonoBehaviour
 {
     [Header("Rotation Settings")]
     [SerializeField] private FallMovement _faller;
+    [SerializeField] private GroundChecker _groundChecker;
     [SerializeField] protected float _moveSpeed = 5f;
 
     protected Transform _currentPillar;
@@ -19,11 +20,13 @@ public abstract class BaseRotationMovement : MonoBehaviour
     private void OnEnable()
     {
         _faller.OnRespawn += Respawn;
+        _groundChecker.OnRoadSegmentChanged += SetPillar;
     }
 
     private void OnDisable()
     {
         _faller.OnRespawn -= Respawn;
+        _groundChecker.OnRoadSegmentChanged -= SetPillar;
     }
 
     public abstract void SetPillar(Transform pillar);
@@ -117,5 +120,10 @@ public abstract class BaseRotationMovement : MonoBehaviour
     protected void UpdateDirection(Vector3 direction)
     {
         transform.forward = direction;
+    }
+
+    public Transform GetPillar()
+    {
+        return _currentPillar;
     }
 }
